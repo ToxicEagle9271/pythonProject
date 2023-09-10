@@ -1,6 +1,7 @@
 def display_title():
     print("Welcome to the Grade Calculator")
 
+
 def get_total_points():
     while True:
         try:
@@ -11,6 +12,7 @@ def get_total_points():
                 print("You must enter integer values between 0 and 1000. Try again.")
         except ValueError:
             print("Please enter a valid integer.")
+
 
 def get_letter_grade(average_earned):
     if 92 <= average_earned <= 100:
@@ -28,6 +30,7 @@ def get_letter_grade(average_earned):
     else:
         return 'F'
 
+
 def main():
     display_title()
     choice = 'y'
@@ -38,6 +41,7 @@ def main():
         print(f"You earned an average of: {average:.1f}%.")
         print("Letter grade earned:", letter_grade)
         choice = input("Would you like to enter another score (y/n)? ")
+
 
 if __name__ == "__main__":
     main()
